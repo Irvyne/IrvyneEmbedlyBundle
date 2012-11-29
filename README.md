@@ -5,9 +5,9 @@ The IrvyneEmbedlyBundle adds support for [Embed.ly](http://embed.ly/) APIs.
 
 Work with the following APIs :
 
-- oEmbed
-- Preview
-- Objectify
+- [oEmbed](http://embed.ly/docs/endpoints/1/oembed)
+- [Preview](http://embed.ly/docs/endpoints/1/preview)
+- [Objectify](http://embed.ly/docs/endpoints/2/objectify)
 
 **Note:** You must have a [Embed.ly](http://embed.ly/) key to use this Bundle.
 
