@@ -9,11 +9,9 @@ Work with the following APIs :
 - Preview
 - Objectify
 
-**Note:** This bundle does *not* provide an authentication system but can
-provide the user provider for the core [SecurityBundle](http://symfony.com/doc/current/book/security.html).
+**Note:** You must have a [Embed.ly](http://embed.ly/) key to use this Bundle.
 
-**Caution:** This bundle is developed in sync with [symfony's repository](https://github.com/symfony/symfony).
-For Symfony 2.0.x, you need to use the 1.2.0 release of the bundle (or lower)
+**Caution:** This bundle is actually in development. Do not use in production environment !
 
 Documentation
 -------------
