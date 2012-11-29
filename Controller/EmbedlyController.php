@@ -16,7 +16,7 @@ class EmbedlyController extends Controller
         $embedly = $this->container->get('irvyne_embedly.service');
 
         return new \Symfony\Component\HttpFoundation\Response(var_dump($embedly->oembed(array(
-            'url'=> 'bigyouth.fr'
+            'url'=> 'https://github.com'
         ))));
     }
     public function showAction($url)
@@ -24,7 +24,7 @@ class EmbedlyController extends Controller
         $embedly = $this->container->get('irvyne_embedly.service');
 
         return new \Symfony\Component\HttpFoundation\Response(var_dump($embedly->oembed(array(
-            'url'=> $url
+            'url' => $url
         ))));
     }
 }

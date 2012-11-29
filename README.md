@@ -16,8 +16,7 @@ Work with the following APIs :
 Documentation
 -------------
 
-The bulk of the documentation is stored in the `Resources/doc/index.md`
-file in this bundle:
+The bulk of the documentation is stored in the `Resources/doc/index.md` file in this bundle:
 
 [Read the Documentation for master](https://github.com/Irvyne/IrvyneEmbedlyBundle/blob/master/Resources/doc/index.md)
 
