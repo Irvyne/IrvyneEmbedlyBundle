@@ -9,7 +9,7 @@ Work with the following APIs :
 - [Preview](http://embed.ly/docs/endpoints/1/preview)
 - [Objectify](http://embed.ly/docs/endpoints/2/objectify)
 
-**Note:** You must have a [Embed.ly](http://embed.ly/) key to use this Bundle.
+**Note:** You must have a [Embed.ly](http://embed.ly/) key to use this Bundle (only [oEmbed](http://embed.ly/docs/endpoints/1/oembed) can be accessed for free).
 
 **Caution:** This bundle is actually in development. Do not use in production environment !
 

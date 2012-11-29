@@ -1,10 +1,11 @@
 Getting Started With IrvyneEmbedlyBundle
 ========================================
 
+
 ## Prerequisites
 
-1. This version of the bundle requires Symfony 2.1+. If you are using Symfony 2.0.x, please use the [NodrewEmbedlyBundle](https://github.com/nodrew/NodrewEmbedlyBundle).
-2. The [PHP's cURL extension](http://www.php.net/manual/en/curl.installation.php) is required.
+- This version of the bundle requires Symfony 2.1+. If you are using Symfony 2.0.x, please use the [NodrewEmbedlyBundle](https://github.com/nodrew/NodrewEmbedlyBundle).
+- The [PHP's cURL extension](http://www.php.net/manual/en/curl.installation.php) is required.
 
 ## Installation
 
@@ -60,8 +61,11 @@ The [Embedly-PHP](https://github.com/embedly/embedly-php) library is not on pack
 
 **Warning:**
 
-> The previous code mut be placed between the `"require": { ... },` part and the `"scripts": { ... },` of the `composer.json` file
-> If you are too lazy to think, here is an example of a [`composer.json`](https://github.com/Irvyne/IrvyneEmbedlyBundle/blob/master/Resources/doc/examples/composer.json) file
+> The previous code mut be placed between the `"require": { ... },` and the `"scripts": { ... },` part of the `composer.json` file.
+
+**Lazy:**
+
+> If you are too lazy to think, here is an example of a [`composer.json`](https://github.com/Irvyne/IrvyneEmbedlyBundle/blob/master/Resources/doc/examples/composer.json) file.
 
 Now tell composer to download the bundle by running the command:
 
@@ -106,10 +110,8 @@ Or if you prefer XML:
 
 ``` xml
 <!-- app/config/config.xml -->
-
 <irvyne_embedly:config
-    key="yourEmbedlyKey"
-/>
+    key="yourEmbedlyKey"/>
 ```
 
 ### Step 4: Add the IrvyneEmbedlyBundle routing (Optional)
