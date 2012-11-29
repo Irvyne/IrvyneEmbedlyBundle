@@ -120,7 +120,7 @@ If you want, you can active some example routes to see what is returned.
 
 ``` yaml
 # app/config/routing_dev.yml
-irvyne_embedly:
+_irvyne_embedly:
     resource: "@IrvyneEmbedlyBundle/Resources/config/routing_dev.yml"
     prefix:   /_embedly
 ```

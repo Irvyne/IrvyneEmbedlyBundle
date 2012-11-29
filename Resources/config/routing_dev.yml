@@ -4,3 +4,5 @@ bigyouth_embedly_oembed:
 bigyouth_embedly_oembed_show:
     pattern:  /oembed/{url}
     defaults: { _controller: IrvyneEmbedlyBundle:Embedly:show }
+    requirements:
+        url: ".+"
