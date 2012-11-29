@@ -20,5 +20,11 @@
     "autoload": {
         "psr-0": { "Irvyne\\EmbedlyBundle": "" }
     },
-    "target-dir": "Irvyne/EmbedlyBundle"
+    "target-dir": "Irvyne/EmbedlyBundle",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "dev-master"
+        }
+    }
 }
