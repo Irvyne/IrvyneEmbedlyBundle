@@ -3,6 +3,6 @@ parameters:
     irvyne_embedly.class: Irvyne\EmbedlyBundle\Service\EmbedlyService
 
 services:
-    irvyne_embedly.service:
+    irvyne_embedly:
         class:     %irvyne_embedly.class%
         arguments: [%irvyne_embedly.key%]

@@ -125,7 +125,7 @@ _irvyne_embedly:
     prefix:   /_embedly
 ```
 
-You can access two routes (for the moment) : `app_dev.php/_embedly/oembed` or `app_dev.php/_embedly/oembed/{url}` (where {url} is an encoded url, example : `embed.ly%2Fdocs%2Fendpoints`)
+You can access two routes (for the moment) : `app_dev.php/_embedly/oembed` or `app_dev.php/_embedly/oembed/{url}` (where {url} is an url, example : `app_dev.php/_embedly/oembed/http://embed.ly/docs/endpoints`)
 
 ### Step 5: Example code (See how it works)
 
