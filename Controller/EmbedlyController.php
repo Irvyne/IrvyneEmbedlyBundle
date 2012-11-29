@@ -11,7 +11,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
  */
 class EmbedlyController extends Controller
 {
-    public function indexAction($url)
+    public function indexAction()
+    {
+        $embedly = $this->container->get('irvyne_embedly.service');
+
+        return new \Symfony\Component\HttpFoundation\Response(var_dump($embedly->oembed(array(
+            'url'=> 'bigyouth.fr'
+        ))));
+    }
+    public function showAction($url)
     {
         $embedly = $this->container->get('irvyne_embedly.service');
 

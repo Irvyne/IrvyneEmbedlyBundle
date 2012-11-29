@@ -1,0 +1,6 @@
+bigyouth_embedly_homepage:
+    pattern:  /irvyne_embedly
+    defaults: { _controller: IrvyneEmbedlyBundle:Embedly:index }
+bigyouth_embedly_show:
+    pattern:  /irvyne_embedly/{url}
+    defaults: { _controller: IrvyneEmbedlyBundle:Embedly:show }
