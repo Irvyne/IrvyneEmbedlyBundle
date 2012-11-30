@@ -33,7 +33,7 @@ Add IrvyneEmbedlyBundle && [Embedly-PHP](https://github.com/embedly/embedly-php)
 
 The [Embedly-PHP](https://github.com/embedly/embedly-php) library is not on packagist so we must define it from GitHub.
 
-```js
+```json
     "repositories": [
         {
             "type": "package",
