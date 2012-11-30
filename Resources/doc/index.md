@@ -139,7 +139,7 @@ class XXXController extends Controller
         $embedly = $this->container->get('irvyne.embedly');
     }
 }
-``` php
+```
 
 An example to retrieve the following url (https://github.com) via the oEmbed API
 
