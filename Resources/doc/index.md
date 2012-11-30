@@ -175,4 +175,4 @@ An example to retrieve the following url (https://github.com) via the oEmbed API
        public 'thumbnail_height' => int 120
  ```
 
-For more informations, you can access Embedly's APIs documentations via [http://embed.ly/docs/endpoints](http://embed.ly/docs/endpoints)
+####For more informations, you can access Embedly's APIs documentation via [http://embed.ly/docs/endpoints](http://embed.ly/docs/endpoints)
