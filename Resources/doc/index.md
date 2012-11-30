@@ -129,4 +129,48 @@ You can access two routes (for the moment) : `app_dev.php/_embedly/oembed` or `a
 
 ### Step 5: Example code (See how it works)
 
-In Progress ...
+In your controller you can access to the service via :
+
+``` php
+class XXXController extends Controller
+{
+    public function xxxAction()
+    {
+        $embedly = $this->container->get('irvyne.embedly');
+    }
+}
+``` php
+
+An example to retrieve the following url (https://github.com) via the oEmbed API
+
+ ``` php
+ class XXXController extends Controller
+ {
+     public function xxxAction()
+     {
+         $embedly = $this->container->get('irvyne.embedly');
+
+         $response = $embedly->oembed(array('url' => 'https://github.com'));
+
+         return new \Symfony\Component\HttpFoundation\Response(var_dump($response));
+     }
+ }
+ ```
+
+ The previous code returns
+
+ ``` php
+ array (size=1)
+   0 =>
+     object(stdClass)[585]
+       public 'provider_url' => string 'https://github.com' (length=18)
+       public 'description' => string 'Git is an extremely fast, efficient, distributed version control system ideal for the collaborative development of software.' (length=124)
+       public 'title' => string 'GitHub · Social Coding' (length=23)
+       public 'url' => string 'https://github.com/' (length=19)
+       public 'thumbnail_width' => int 280
+       public 'thumbnail_url' => string 'https://a248.e.akamai.net/assets.github.com/images/modules/header/logov7@4x-hover.png?1337118066' (length=96)
+       public 'version' => string '1.0' (length=3)
+       public 'provider_name' => string 'Github' (length=6)
+       public 'type' => string 'link' (length=4)
+       public 'thumbnail_height' => int 120
+ ```
