@@ -1,3 +1,0 @@
-#bigyouth_embedly_homepage:
-#    pattern:  /irvyne_embedly/{url}
-#    defaults: { _controller: IrvyneEmbedlyBundle:Embedly:index }

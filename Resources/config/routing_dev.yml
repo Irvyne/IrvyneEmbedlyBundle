@@ -1,7 +1,7 @@
-bigyouth_embedly_oembed:
+irvyne_embedly_oembed:
     pattern:  /oembed
     defaults: { _controller: IrvyneEmbedlyBundle:Embedly:index }
-bigyouth_embedly_oembed_show:
+irvyne_embedly_oembed_show:
     pattern:  /oembed/{url}
     defaults: { _controller: IrvyneEmbedlyBundle:Embedly:show }
     requirements:

@@ -13,7 +13,7 @@ class EmbedlyController extends Controller
 {
     public function indexAction()
     {
-        $embedly = $this->container->get('irvyne_embedly');
+        $embedly = $this->container->get('irvyne.embedly');
 
         return new \Symfony\Component\HttpFoundation\Response(var_dump($embedly->oembed(array(
             'url' => 'https://github.com'
@@ -21,7 +21,7 @@ class EmbedlyController extends Controller
     }
     public function showAction($url)
     {
-        $embedly = $this->container->get('irvyne_embedly');
+        $embedly = $this->container->get('irvyne.embedly');
 
         return new \Symfony\Component\HttpFoundation\Response(var_dump($embedly->oembed(array(
             'url' => $url
