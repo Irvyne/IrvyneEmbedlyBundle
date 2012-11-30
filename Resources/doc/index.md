@@ -21,7 +21,7 @@ Installation is a quick 5 step process (I hope so !) :
 
 Add IrvyneEmbedlyBundle && [Embedly-PHP](https://github.com/embedly/embedly-php) in the "require" part of your composer.json:
 
-```js
+```json
 {
     "require": {
         ...
