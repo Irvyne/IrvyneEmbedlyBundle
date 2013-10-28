@@ -3,7 +3,6 @@
     "type": "symfony-bundle",
     "description": "Symfony2 Embedly Bundle",
     "keywords": ["Symfony2", "Bundle", "Embedly"],
-    "type": "symfony-bundle",
     "homepage": "https://github.com/Irvyne/IrvyneEmbedlyBundle",
     "license": "MIT",
     "authors": [
@@ -12,14 +11,14 @@
             "email": "irvyne.contact@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.2",
-        "symfony/framework-bundle": ">=2.1,<2.3-dev"
+        "symfony/framework-bundle": "~2.1",
+        "embedly/embedly-php": "v0.5.1"
     },
     "autoload": {
         "psr-0": { "Irvyne\\EmbedlyBundle": "" }
     },
     "target-dir": "Irvyne/EmbedlyBundle",
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }

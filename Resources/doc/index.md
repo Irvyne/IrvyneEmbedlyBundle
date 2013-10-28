@@ -11,66 +11,33 @@ Getting Started With IrvyneEmbedlyBundle
 
 Installation is a quick 5 step process (I hope so !) :
 
-1. Download IrvyneEmbedlyBundle && [Embedly-PHP](https://github.com/embedly/embedly-php) using composer
+1. Download IrvyneEmbedlyBundle using composer
 2. Enable the Bundle
 3. Configure the IrvyneEmbedlyBundle
 4. Add the IrvyneEmbedlyBundle routing (Optional)
 5. Example code (See how it works)
 
-### Step 1: Download IrvyneEmbedlyBundle && [Embedly-PHP](https://github.com/embedly/embedly-php)  using composer
+### Step 1: Download IrvyneEmbedlyBundle  using composer
 
-Add IrvyneEmbedlyBundle && [Embedly-PHP](https://github.com/embedly/embedly-php) in the "require" part of your composer.json:
+Add IrvyneEmbedlyBundle in the "require" part of your composer.json:
 
 ```json
 {
     "require": {
         ...
-        "irvyne/embedly-bundle": "dev-master",
-        "embedly/embedly-php": "master"
+        "irvyne/embedly-bundle": "dev-master"
     }
 }
 ```
 
-The [Embedly-PHP](https://github.com/embedly/embedly-php) library is not on packagist so we must define it from GitHub.
-
-```json
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "version": "master",
-                "name": "embedly/embedly-php",
-                "source": {
-                    "url": "https://github.com/embedly/embedly-php.git",
-                    "type": "git",
-                    "reference": "master"
-                },
-                "dist": {
-                    "url": "https://github.com/embedly/embedly-php/zipball/master",
-                    "type": "zip"
-                },
-                "autoload": {
-                    "psr-0": { "Embedly": "src/" },
-                    "files": ["src/Embedly/Embedly.php"]
-                },
-                "minimum-stability": "dev"
-            }
-        }
-    ],
-```
-
-**Warning:**
-
-> The previous code mut be placed between the `"require": { ... },` and the `"scripts": { ... },` part of the `composer.json` file.
-
 **Lazy:**
 
-> If you are too lazy to think, here is an example of a [`composer.json`](https://github.com/Irvyne/IrvyneEmbedlyBundle/blob/master/Resources/doc/examples/composer.json) file.
+> If you are too lazy to add this manually, hit in the console : `php composer.phar require irvyne/embedly-bundle dev-master`.
 
 Now tell composer to download the bundle by running the command:
 
 ``` bash
-$ php composer.phar update friendsofsymfony/user-bundle embedly/embedly-php
+$ php composer.phar update irvyne/embedly-bundle
 ```
 or simply
 ``` bash

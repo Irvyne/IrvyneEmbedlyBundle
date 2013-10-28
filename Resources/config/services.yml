@@ -1,5 +1,5 @@
 parameters:
-    irvyne_embedly.key: null # DependencyInjection Configuration
+    irvyne_embedly.key: ~ # DependencyInjection Configuration
     irvyne_embedly.class: Irvyne\EmbedlyBundle\Service\EmbedlyService
 
 services:
