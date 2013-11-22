@@ -11,20 +11,28 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
  */
 class EmbedlyController extends Controller
 {
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function indexAction()
     {
-        $embedly = $this->container->get('irvyne.embedly');
-
-        return new \Symfony\Component\HttpFoundation\Response(var_dump($embedly->oembed(array(
+        $oembed = $this->container->get('irvyne.embedly')->oembed(array(
             'url' => 'https://github.com'
-        ))));
+        ));
+
+        return $this->render('IrvyneEmbedlyBundle:OEmbed:show.html.twig', array('oembed' => $oembed));
     }
+
+    /**
+     * @param $url
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function showAction($url)
     {
-        $embedly = $this->container->get('irvyne.embedly');
-
-        return new \Symfony\Component\HttpFoundation\Response(var_dump($embedly->oembed(array(
+        $oembed = $this->container->get('irvyne.embedly')->oembed(array(
             'url' => $url
-        ))));
+        ));
+
+        return $this->render('IrvyneEmbedlyBundle:OEmbed:show.html.twig', array('oembed' => $oembed));
     }
 }
