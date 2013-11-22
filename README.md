@@ -1,7 +1,7 @@
 IrvyneEmbedlyBundle
 ===================
 
-The IrvyneEmbedlyBundle adds support for [Embed.ly](http://embed.ly/) APIs.
+The IrvyneEmbedlyBundle adds support for [Embed.ly](http://embed.ly/) APIs. [![Travis-CI Build Status](https://secure.travis-ci.org/Irvyne/IrvyneEmbedlyBundle.png?branch=master)](http://travis-ci.org/#!/Irvyne/IrvyneEmbedlyBundle)
 
 Work with the following APIs :
 
