@@ -11,7 +11,7 @@ Work with the following APIs :
 
 **Note:** You must have a [Embed.ly](http://embed.ly/) key to use this Bundle (only [oEmbed](http://embed.ly/docs/endpoints/1/oembed) can be accessed for free).
 
-**Caution:** The ```master``` branch is the development branch. Do not use in production environment, use a [stable branch](https://github.com/Irvyne/IrvyneEmbedlyBundle/tree/1.0) instead!
+**Caution:** The ```master``` branch is the development branch. Do not use in production environment, use [branch 1.0](https://github.com/Irvyne/IrvyneEmbedlyBundle/tree/1.0) instead!
 
 Documentation
 -------------
